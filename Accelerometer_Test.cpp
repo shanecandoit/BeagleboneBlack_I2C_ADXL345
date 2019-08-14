@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 {
 	cout << "Testing ADXL345Accelerometer " << endl;
 
-	ADXL345Accelerometer Accelerometer_Test(1, 0x53);
+	ADXL345Accelerometer Accelerometer_Test(2, 0x1D);
 	cout<<"Device ID : "<< hex << Accelerometer_Test.getAccelerometer_ID()<<endl;
 	Accelerometer_Test.SetPowerMode(0x01);
 	Accelerometer_Test.getAccelerationData();
